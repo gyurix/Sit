@@ -48,6 +48,10 @@ public class Sit extends JavaPlugin implements Listener {
       kf.file.renameTo(to);
       loadConfig();
     }
+    if (Config.version == 2) {
+      Config.version = 3;
+      kf.save();
+    }
   }
 
   @EventHandler
@@ -82,7 +86,7 @@ public class Sit extends JavaPlugin implements Listener {
   @Override
   public void onEnable() {
     loadConfig();
-    lang = GlobalLangFile.loadLF("sit", getDataFolder() + File.separator + "lang.yml");
+    lang = GlobalLangFile.loadLF("sit", getResource("lang.yml"), getDataFolder() + File.separator + "lang.yml");
     if (Heal.enabled) {
       Bukkit.getScheduler().scheduleSyncRepeatingTask(this, () -> {
         for (String s : armorStands.keySet()) {
@@ -134,6 +138,10 @@ public class Sit extends JavaPlugin implements Listener {
   public boolean sit(Location loc, Player plr, double height) {
     if (plr.getVehicle() != null || armorStands.containsKey(plr.getName())) {
       lang.msg(plr, "sit.already");
+      return false;
+    }
+    if (Config.airCheck && plr.getLocation().subtract(0, 0.6, 0).getBlock().getType() == Material.AIR) {
+      lang.msg(plr, "sit.air");
       return false;
     }
     ArmorStand as = (ArmorStand) plr.getWorld().spawnEntity(loc.subtract(0, 2 - height, 0), EntityType.ARMOR_STAND);

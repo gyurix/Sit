@@ -6,14 +6,12 @@ import org.bukkit.entity.Player;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by GyuriX on 2017. 06. 17.
- */
 public class Config {
   public static Click click;
   public static double groundHeight;
   public static Heal heal;
   public static int version;
+  public static boolean airCheck = true;
 
   public static class Heal {
     public static int checkRate;

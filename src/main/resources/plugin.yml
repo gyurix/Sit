@@ -1,8 +1,8 @@
 name: Sit
 main: gyurix.sit.Sit
 author: gyurix
-api-version: 1.13
-version: 2.0
+api-version: "1.13"
+version: "2.1"
 depend: [SpigotLib]
 commands:
   sit:

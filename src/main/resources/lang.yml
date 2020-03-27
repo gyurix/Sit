@@ -5,6 +5,7 @@ en:
     already: &cYou are sitting already
     noconsole: &cThis command can only be used by players.
     sit: You sit down.
+      air: &cYou need to be on the ground for being able to sit
       already: &cYou are sitting already.
       chair: You sit down to the chair.
     stand: You stand up.

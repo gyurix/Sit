@@ -1,6 +1,8 @@
-#Config version, do not change it
-version: 2
-#Permission: sit.heal.<groupname>
+# Config version, do not change it
+version: 3
+# Do not allow sitting in the air
+airCheck: +
+# Permission: sit.heal.<groupname>
 heal:
   checkRate: 20
   groups:
