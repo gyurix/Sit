@@ -1,0 +1,10 @@
+en:
+  sit:
+    prefix: &6&lSit ► &7
+    noperm: &cYou don't have permission for sitting down.
+    already: &cYou are sitting already
+    noconsole: &cThis command can only be used by players.
+    sit: You sit down.
+      already: &cYou are sitting already.
+      chair: You sit down to the chair.
+    stand: You stand up.

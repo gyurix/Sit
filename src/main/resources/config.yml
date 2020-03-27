@@ -1,0 +1,54 @@
+#Config version, do not change it
+version: 2
+#Permission: sit.heal.<groupname>
+heal:
+  checkRate: 20
+  groups:
+    default: 1
+    donor: 2
+    vip: 3
+  enabled: +
+#Y level of the sitting
+groundHeight: 0.3
+click:
+  blockUpperSlabs: +
+  enabled: +
+  #Y level of sitting on each block
+  #Permission: sit.block.<blocktype>
+  blocks:
+    PURPUR_STAIRS: 1
+    OAK_STAIRS: 1
+    COBBLESTONE_STAIRS: 1
+    BRICK_STAIRS: 1
+    STONE_BRICK_STAIRS: 1
+    NETHER_BRICK_STAIRS: 1
+    SANDSTONE_STAIRS: 1
+    SPRUCE_STAIRS: 1
+    BIRCH_STAIRS: 1
+    JUNGLE_STAIRS: 1
+    QUARTZ_STAIRS: 1
+    ACACIA_STAIRS: 1
+    DARK_OAK_STAIRS: 1
+    PRISMARINE_STAIRS: 1
+    PRISMARINE_BRICK_STAIRS: 1
+    DARK_PRISMARINE_STAIRS: 1
+    RED_SANDSTONE_STAIRS: 1
+    OAK_SLAB: 0.8
+    SPRUCE_SLAB: 0.8
+    BIRCH_SLAB: 0.8
+    JUNGLE_SLAB: 0.8
+    ACACIA_SLAB: 0.8
+    DARK_OAK_SLAB: 0.8
+    STONE_SLAB: 0.8
+    SANDSTONE_SLAB: 0.8
+    PETRIFIED_OAK_SLAB: 0.8
+    COBBLESTONE_SLAB: 0.8
+    BRICK_SLAB: 0.8
+    STONE_BRICK_SLAB: 0.8
+    NETHER_BRICK_SLAB: 0.8
+    QUARTZ_SLAB: 0.8
+    RED_SANDSTONE_SLAB: 0.8
+    PURPUR_SLAB: 0.8
+    PRISMARINE_SLAB: 0.8
+    PRISMARINE_BRICK_SLAB: 0.8
+    DARK_PRISMARINE_SLAB: 0.8
